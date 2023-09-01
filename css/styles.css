@@ -1,0 +1,58 @@
+/*MAIN CLASSES*/
+.font {
+    font-family: courier
+}
+
+/* HEADER */
+.main_header {
+    font-size: 70px;
+    color: #262827;
+    margin: 10px;
+}
+
+.menu_bar {
+    font-size: 20px;
+    color: #262827;
+    margin: 50px;
+}
+
+/* MAIN */
+.main_paragraph_text {
+    line-height: 1.6;
+    font-size:17px;
+}
+
+/* FOOTER */
+.footer {
+    color:white;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* IMAGES */
+.header_img {
+    background-size: cover;
+    height:250px;
+    padding-top:80px;
+    text-align: center;
+    font-family: courier
+}
+
+.main_img {
+    height:600px;
+    margin:100px;
+    float: left
+}
+
+/* LINKS */
+a:visited { 
+    text-decoration: none; 
+    color:#262827; 
+   }
+
+a:hover {
+    text-decoration: underline;
+    color:rgb(167, 215, 231);
+}
