@@ -4,6 +4,8 @@
 {% for article in articles %}
     {% if article.id == id %}
         <h1>{{article.title}}</h1>
+        <h2>{{article.date_created}}</h2>
+        <h4>{{article.author}}</h4>
         <p>{{article.body}}</p>
     {% endif %}
 {% endfor %}

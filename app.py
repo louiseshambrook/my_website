@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from article_data import Articles
+from article_data import article_list
 
 app = Flask(__name__)
 
-Articles = Articles()
+article_list = article_list()
 
 @app.route('/')
 def index():
@@ -15,11 +15,11 @@ def about():
 
 @app.route('/articles')
 def articles():
-   return render_template('articles.html', articles=Articles)
+   return render_template('articles.html', articles=article_list)
 
 @app.route('/articles/<string:id>/')
 def display_article(id):
-   return render_template('articles_page.html', id=id, articles=Articles)
+   return render_template('articles_page.html', id=id, articles=article_list)
 
 if __name__ == '__main__':
    app.run(debug=True)
