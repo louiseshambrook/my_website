@@ -4,9 +4,11 @@
 {% for article in articles %}
     {% if article.id == id %}
         <h1>{{article.title}}</h1>
-        <h2>{{article.date_created}}</h2>
-        <h4>{{article.author}}</h4>
-        <p>{{article.body}}</p>
+        <h5>{{article.date_created}}</h5>
+        <br>
+        <b><h3>{{article.author}}</h3></b>
+        <br>
+        <p style="white-space: pre-line;">{{article.body}}</p>
     {% endif %}
 {% endfor %}
 {% endblock %}
